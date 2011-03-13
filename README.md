@@ -1,10 +1,8 @@
-# Bowler SBT Quickstart
-The Bowler Quickstart is a Skeleton sbt project and Bowler app that gets you up and running with a minimal Bowler app that you can adapt in no time.
+Based on https://github.com/wfaler/bowler-quickstart
 
-## Setup Instructions
-* Have [Simple Build Tool ("sbt")](http://code.google.com/p/simple-build-tool/) installed
-* Create the directory where you want to start your app and run "git init"
-* Do  "git pull https://github.com/wfaler/bowler-quickstart.git"
-* Run sbt
-* Run "update" inside of sbt
-* Done! Ready to start writing your Bowler app!
+Basic bowler setup to test its relative speed.
+
+Also testing: 
+* Scalatra: https://github.com/thesmith/scalatra 
+* Spring MVC: https://github.com/thesmith/testspringmvc
+
