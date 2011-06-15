@@ -27,7 +27,7 @@
     <servlet-class>org.bowlerframework.http.BowlerServlet</servlet-class>
     <init-param>
       <param-name>bootstrapClass</param-name>
-      <param-value>bowlerquickstart.Bootstrap</param-value>
+      <param-value>thesmith.testbowler.Bootstrap</param-value>
     </init-param>
   </servlet>
 
