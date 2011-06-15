@@ -1,4 +1,4 @@
-package bowlerquickstart
+package thesmith.testbowler
 
 
 import org.scalatra.test.scalatest.ScalatraFunSuite

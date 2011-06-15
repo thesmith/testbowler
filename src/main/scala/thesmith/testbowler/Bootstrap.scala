@@ -1,4 +1,4 @@
-package bowlerquickstart
+package thesmith.testbowler
 
 import org.bowlerframework.view.scalate._
 import org.bowlerframework.Request
