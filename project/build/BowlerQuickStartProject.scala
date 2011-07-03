@@ -1,8 +1,10 @@
 import sbt._
 import net.usersource.jettyembed._
 
-class BowlerProject(info: ProjectInfo) extends JettyEmbedWebProject(info, JETTY7) {
-  val bowler = "org.bowlerframework" %% "core" % "0.5-SNAPSHOT"
+class BowlerProject(info: ProjectInfo) extends JettyEmbedWebProject(info, JETTY7) with IdeaProject {
+  override def compileOptions = super.compileOptions ++ Seq(Unchecked, Deprecation)
+
+  val bowler = "org.bowlerframework" %% "core" % "0.4.1"
 
   val slf4jVersion = "1.6.0"
 
@@ -11,8 +13,8 @@ class BowlerProject(info: ProjectInfo) extends JettyEmbedWebProject(info, JETTY7
   // allows you to use an embedded/in-JVM jetty-server to run unit-tests.
   val scalatraTest = "org.scalatra" %% "scalatra-scalatest" % "2.0.0-SNAPSHOT" % "test"
 
-  val jetty7 = "org.eclipse.jetty" % "jetty-server" % "7.4.1.v20110513"
-  val jettyWebapp = "org.eclipse.jetty" % "jetty-webapp" % "7.4.1.v20110513"
+  val jetty7 = "org.eclipse.jetty" % "jetty-server" % "7.4.1.v20110513" % "compile"
+  val jettyWebapp = "org.eclipse.jetty" % "jetty-webapp" % "7.4.1.v20110513" % "compile"
 
   val servletApi = "javax.servlet" % "servlet-api" % "2.5" % "provided"
 
