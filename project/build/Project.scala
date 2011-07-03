@@ -1,7 +1,7 @@
 import sbt._
 import net.usersource.jettyembed._
 
-class BowlerProject(info: ProjectInfo) extends JettyEmbedWebProject(info, JETTY7) with IdeaProject {
+class Project(info: ProjectInfo) extends JettyEmbedWebProject(info, JETTY7) with IdeaProject {
   override def compileOptions = super.compileOptions ++ Seq(Unchecked, Deprecation)
 
   val bowler = "org.bowlerframework" %% "core" % "0.4.1"
